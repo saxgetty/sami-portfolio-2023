@@ -1,24 +1,33 @@
 <!-- Home Page Index -->
 <!-- @File Name: index.vue -->
 <!-- @Author: Sami Saxton-Getty -->
-
+<!-- grid-flow-row auto-rows-max -->
 <template>
     <!-- TODO: Style -->
     <div>     
-      <div class="grid grid-flow-row auto-rows-max place-items-center">
-        <div class="col-start-1"><avatar /></div>
-        <div class="row-start-2 text-6xl font-archivoBlack">
-            Sami Saxton-Getty
+      <div class="flex flex-col min-h-screen">
+        <div class="mt-20 mx-auto items-center">
+          <div>
+            <avatar />
+          </div>  
         </div>
-        <div class="row-start-3">
-          <div class="grid grid-flow-col auto-cols-max place-items-center">
-            <div class="col-start-1">
+        <div class="mt-10 mx-auto items-center">
+          <div class="text-6xl font-fascinateInline text-calm-blue">
+            Sami Saxton-Getty
+          </div>  
+        </div> 
+        <div class="mt-10 mx-auto items-center">
+            <hr class="w-48 h-1 my-4 bg-creamy-beige border-0 rounded sm:my-10">
+        </div>
+        <div class="mt-10 mx-auto items-center">
+          <div class="flex flex-col sm:flex-row">
+            <div>
               <email />
             </div>
-            <div class="col-start-2">
+            <div class="mx-0 my-10 sm:mx-10 sm:my-0">
               <linkedin />
             </div>
-            <div class="col-start-3">
+            <div class="mb-10 sm:mb-0">
               <github />
             </div>
           </div>

@@ -1,5 +1,5 @@
 <template>
-    <button type="button" class="inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+    <button type="button" class="inline-flex items-center gap-x-2 rounded-md bg-peachy-pink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
       <NuxtLink class="" to="https://github.com/saxgetty" target="_blank">GitHub</NuxtLink>
       <!-- TODO: Style buttons -->
       <!-- FIXME: Find better icons for the socials -->

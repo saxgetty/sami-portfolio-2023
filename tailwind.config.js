@@ -11,7 +11,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'archivoBlack': ['Archivo Black', 'sans-serif']
+        'fascinateInline': ['Fascinate Inline', 'cursive']
+      },
+      colors: {
+        'peachy-pink': '#DF8A86',
+        'calm-blue': '#9DC4B5',
+        'creamy-beige': '#F1E4C6',
       },
     },
   },
