@@ -20,14 +20,14 @@
             <hr class="w-48 h-1 my-4 bg-creamy-beige border-0 rounded sm:my-10">
         </div>
         <div class="mt-10 mx-auto items-center">
-          <div class="flex flex-col sm:flex-row">
+          <div class="flex flex-col mb-10 sm:flex-row sm:mb-10">
             <div>
               <email />
             </div>
             <div class="mx-0 my-10 sm:mx-10 sm:my-0">
               <linkedin />
             </div>
-            <div class="mb-10 sm:mb-0">
+            <div>
               <github />
             </div>
           </div>
