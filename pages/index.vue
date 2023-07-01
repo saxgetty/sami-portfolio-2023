@@ -12,7 +12,7 @@
           </div>  
         </div>
         <div class="mt-10 mx-auto items-center">
-          <div class="text-6xl font-fascinateInline text-calm-blue">
+          <div class="text-4xl font-fascinateInline text-calm-blue sm:text-5xl md:text-6xl">
             Sami Saxton-Getty
           </div>  
         </div> 

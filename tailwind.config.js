@@ -18,6 +18,9 @@ module.exports = {
         'calm-blue': '#9DC4B5',
         'creamy-beige': '#F1E4C6',
       },
+      screens: {
+        'sm': '600px',
+      },
     },
   },
   plugins: [],
