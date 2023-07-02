@@ -15,11 +15,13 @@ module.exports = {
       },
       colors: {
         'peachy-pink': '#DF8A86',
+        'peachy-pink-dark': '#CA3C35',
         'calm-blue': '#9DC4B5',
         'creamy-beige': '#F1E4C6',
       },
       screens: {
         'sm': '600px',
+        'lg': '1150px',
       },
     },
   },
