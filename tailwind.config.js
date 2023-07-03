@@ -20,7 +20,9 @@ module.exports = {
         'creamy-beige': '#F1E4C6',
       },
       screens: {
-        'sm': '600px',
+        'xs': '450px',
+        'sm': '650px',
+        'md-icon': '800px',
         'lg': '1150px',
       },
     },
