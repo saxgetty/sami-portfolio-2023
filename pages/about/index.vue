@@ -4,17 +4,17 @@
         <div class="container grid gap-8 grid-cols-1 grid-rows-5 max-w-5xl lg:grid-cols-2 lg:grid-rows-3">
           <div class="flex bg-white p-4 rounded-md shadow-md text-center row-span-1">
             <div class="p-10">
-              <aboutMe />
+              <AboutGetToKnowMe />
             </div>
           </div>
           <div class="flex bg-white p-4 rounded-md shadow-md text-center row-span-1">
             <div class="flex-1 p-10">
-              <coreValues />
+              <AboutCoreValues />
             </div>
           </div>
           <div class="flex bg-white p-4 pt-20 rounded-md shadow-md row-span-2 lg:col-span-2 lg:row-span-1 lg:items-center lg:pt-0">
             <div class="flex-1 p-10">
-              <timeline />
+              <AboutTimeline />
             </div>
           </div>
           <div class="flex bg-white p-4 rounded-md shadow-md row-span-1 lg:col-span-2 lg:row-span-1">
@@ -53,51 +53,51 @@
                   <TabPanel>
                     <div class="grid grid-cols-3 grid-rows-2 items-center justify-center gap-7 pt-10 md:grid-cols-5 md:grid-rows-2">
                       <div class="mx-auto">
-                        <SkillsLanguagesCSharp/>
+                        <AboutSkillsLanguagesCSharp />
                       </div>
                       <div class="mx-auto">
-                        <SkillsLanguagesC++/>
+                        <AboutSkillsLanguagesC++ />
                       </div>
                       <div class="mx-auto">
-                        <SkillsLanguagesCss3/>
+                        <AboutSkillsLanguagesCss3 />
                       </div>
                       <div class="mx-auto">
-                        <SkillsLanguagesHtml5/>
+                        <AboutSkillsLanguagesHtml5 />
                       </div>
                       <div class="mx-auto">
-                        <SkillsLanguagesJava/>
+                        <AboutSkillsLanguagesJava />
                       </div>
                       <div class="mx-auto">
-                        <SkillsLanguagesJavascript/>
+                        <AboutSkillsLanguagesJavascript />
                       </div>
                       <div class="mx-auto">
-                        <SkillsLanguagesPython/>
+                        <AboutSkillsLanguagesPython />
                       </div>
                       <div class="mx-auto">
-                        <SkillsLanguagesSql/>
+                        <AboutSkillsLanguagesSql />
                       </div>
                       <div class="mx-auto">
-                        <SkillsLanguagesSwift/>
+                        <AboutSkillsLanguagesSwift />
                       </div>
                     </div>
                   </TabPanel>
                   <TabPanel>
                     <div class="grid grid-cols-3 grid-rows-2 items-center justify-center gap-7 pt-10 md:grid-cols-5 md:grid-rows-2">
                       <div class="mx-auto">
-                        <SkillsFrameworksBootstrap/>
+                        <AboutSkillsFrameworksBootstrap />
                       </div>
                       <div class="mx-auto">
-                        <SkillsFrameworksMaterialUi/>
+                        <AboutSkillsFrameworksMaterialUi />
                       </div>
                       <!-- FIXME: I need a better solution to this icon -->
                       <div class="mx-auto">
-                        <SkillsFrameworksNuxtJs/>
+                        <AboutSkillsFrameworksNuxtJs />
                       </div>
                       <div class="mx-auto">
-                        <SkillsFrameworksReactJs/>
+                        <AboutSkillsFrameworksReactJs />
                       </div>
                       <div class="mx-auto">
-                        <SkillsFrameworksTailwindCss/>
+                        <AboutSkillsFrameworksTailwindCss />
                       </div>
                     </div>
                   </TabPanel>

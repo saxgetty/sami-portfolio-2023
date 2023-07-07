@@ -8,7 +8,7 @@
                 <div class="bg-creamy-beige h-0.5 lg:flex w-full h-1"></div>
             </div>
             <div class="mt-3 pb-10 lg:pr-9 lg:pb-0">
-                <h3 class="text-3xl font-fascinateInline text-calm-blue">QC Specialist</h3>
+                <h3 class="text-3xl font-groovy text-calm-blue">QC Specialist</h3>
                 <p class="text-base font-normal text-gray-500">Freedom Forever</p>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Jan 2019 - Sep 2021</time>       
             </div>
@@ -21,7 +21,7 @@
                 <div class="bg-creamy-beige h-0.5 lg:flex w-full h-1"></div>
             </div>
             <div class="mt-3 pb-10 lg:pr-9 lg:pb-0">
-                <h3 class="text-3xl font-fascinateInline text-calm-blue">B.S. Computer Science</h3>
+                <h3 class="text-3xl font-groovy text-calm-blue">B.S. Computer Science</h3>
                 <p class="text-base font-normal text-gray-500">San Francisco State University</p>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Aug 2019 - May 2022</time>   
             </div>
@@ -34,7 +34,7 @@
                 <div class="bg-creamy-beige h-0.5 lg:flex w-full h-1"></div>
             </div>
             <div class="mt-3 pb-10 lg:pr-9 lg:pb-0">
-                <h3 class="text-3xl font-fascinateInline text-calm-blue">QA Engineer</h3>
+                <h3 class="text-3xl font-groovy text-calm-blue">QA Engineer</h3>
                 <p class="text-base font-normal text-gray-500">Binance.US</p>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Dec 2022 - Aug 2023</time>     
             </div>

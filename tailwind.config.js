@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'fascinateInline': ['Fascinate Inline', 'cursive']
+        'fascinateInline': ['Fascinate Inline', 'cursive'],
+        'groovy': ['abstractGroovy']
       },
       colors: {
         'peachy-pink': '#DF8A86',

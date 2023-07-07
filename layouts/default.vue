@@ -1,6 +1,5 @@
 <template>
     <!-- TODO: Style -->
-    <!-- TODO: Center Navbar -->
     <Disclosure as="nav" class="bg-peachy-pink shadow" v-slot="{ open }">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 justify-between">
@@ -12,12 +11,7 @@
               <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
             </DisclosureButton>
           </div>
-          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div class="flex flex-shrink-0 items-center">
-              <!-- TODO: Change the logo -->
-              <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" />
-              <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" />
-            </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
             <div class="hidden sm:ml-6 sm:flex sm:space-x-8"> 
               <!-- FIXME: Adjust the nav tabs so that upon reload the active tab is still highlighted -->
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
