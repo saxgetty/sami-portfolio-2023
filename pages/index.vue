@@ -5,7 +5,7 @@
 <template>
     <!-- TODO: Style -->
     <div>     
-      <div class="flex flex-col min-h-screen">
+      <div class="flex flex-col">
         <div class="mt-20 mx-auto items-center">
           <div>
             <HomeAvatar />
@@ -17,10 +17,7 @@
           </div>  
         </div> 
         <div class="mt-10 mx-auto items-center">
-            <hr class="w-48 h-1 my-4 bg-creamy-beige border-0 rounded sm:my-10">
-        </div>
-        <div class="mt-10 mx-auto items-center">
-          <div class="flex flex-col mb-10 sm:flex-row sm:mb-10">
+          <div class="flex flex-col pb-20 sm:flex-row">
             <div>
               <HomeSocialsEmail />
             </div>
