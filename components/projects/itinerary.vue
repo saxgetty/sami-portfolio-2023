@@ -6,18 +6,7 @@
     />
     <div class="p-4">
         <p class="mb-2 text-sm text-primary-500"><time>May 2022</time></p>
-        <h3 class="text-xl font-groovy text-calm-blue">iTinerary</h3>
+        <h3 class="text-xl font-shrikhand text-calm-blue">iTinerary</h3>
         <p class="mt-1 text-gray-500">Project iTinerary is an iOS mobile application created in XCode in a team of 4, utilizing the Swift language, and UI Kit and SwiftUI frameworks. iTinerary serves as a note taking application to plan trips and record relevant information.</p>
-        <div class="mt-4 flex gap-2">
-            <span class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600">
-                Swift
-            </span>
-            <span class="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2 py-1 text-xs font-semibold text-indigo-600">
-                UIKit
-            </span>
-            <span class="inline-flex items-center gap-1 rounded-full bg-orange-50 px-2 py-1 text-xs font-semibold text-orange-600">
-                SwiftUI
-            </span>
-        </div>
     </div>
 </template>

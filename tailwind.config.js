@@ -11,20 +11,30 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'fascinateInline': ['Fascinate Inline', 'cursive'],
-        'groovy': ['abstractGroovy']
+        'groovy': ['abstractGroovy'],
+        'shrikhand': ['Shrikhand', 'cursive'],
+        'karla': ['Karla', 'sans-serif'],
       },
       colors: {
-        'peachy-pink': '#DF8A86',
-        'peachy-pink-dark': '#CA3C35',
-        'calm-blue': '#9DC4B5',
+        // 'peachy-pink': '#DF8A86',
+        // 'peachy-pink-dark': '#CA3C35',
+        // 'calm-blue': '#9DC4B5',
+        // 'creamy-beige': '#F1E4C6',
+        'peachy-pink': '#BBCC85',
+        'peachy-pink-dark': '#6A843D',
+        'calm-blue': '#D1BBEA',
         'creamy-beige': '#F1E4C6',
       },
       screens: {
         'xs': '450px',
+        'smX': '500px',
         'sm': '650px',
         'md-icon': '800px',
+        'mdX': '900px',
+        'project-md': '1000px',
         'lg': '1150px',
+        'lgX': '1160px',
+        'xlX': '1300px',
       },
     },
   },

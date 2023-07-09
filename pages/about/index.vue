@@ -10,8 +10,8 @@
           <div class="flex-1 p-10">
             <AboutCoreValues />
           </div>
-        </div>
-        <div class="flex bg-white p-4 pt-20 rounded-md shadow-md row-span-2 lg:col-span-2 lg:row-span-1 lg:items-center lg:pt-0">
+        </div> 
+        <div class="flex bg-white items-center pt-20 p-4 rounded-md shadow-md row-span-2 lg:col-span-2 lg:row-span-1 lg:pt-0">
           <div class="flex-1 p-10">
             <AboutTimeline />
           </div>
@@ -19,11 +19,11 @@
         <div class="flex bg-white p-4 rounded-md shadow-md row-span-1 lg:col-span-2 lg:row-span-1">
           <div class="flex-1 p-10">
             <TabGroup>
-              <TabList class="flex space-x-1 rounded-full bg-peachy-pink p-1">
+              <TabList class="flex space-x-1 rounded-md bg-peachy-pink p-1">
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-full py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
+                      'w-full rounded-md py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
                       'focus:outline-none focus:ring-0',
                       selected ? 'bg-white shadow' : 'text-peachy-pink-dark hover:bg-white/[0.12] hover:text-white',]">
                     Languages
@@ -32,7 +32,7 @@
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-full py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
+                      'w-full rounded-md py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
                       'focus:outline-none focus:ring-0',
                       selected ? 'bg-white shadow' : 'text-peachy-pink-dark hover:bg-white/[0.12] hover:text-white',]">
                     Frameworks
@@ -41,7 +41,7 @@
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-full py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
+                      'w-full rounded-md py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
                       'focus:outline-none focus:ring-0',
                       selected ? 'bg-white shadow' : 'text-peachy-pink-dark hover:bg-white/[0.12] hover:text-white',]">
                     Tools

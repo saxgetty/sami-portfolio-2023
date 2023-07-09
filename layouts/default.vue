@@ -16,9 +16,9 @@
               <!-- FIXME: Adjust the nav tabs so that upon reload the active tab is still highlighted -->
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
               
-              <NuxtLink class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-groovy text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:border-indigo-500 focus:text-gray-900" to="/">Home</NuxtLink>
-              <NuxtLink class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-groovy text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:border-indigo-500 focus:text-gray-900" to="/about">About Me</NuxtLink>
-              <NuxtLink class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-groovy text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:border-indigo-500 focus:text-gray-900" to="/projects">Projects</NuxtLink>
+              <NuxtLink class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-shrikhand text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:border-indigo-500 focus:text-gray-900" to="/">Home</NuxtLink>
+              <NuxtLink class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-shrikhand text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:border-indigo-500 focus:text-gray-900" to="/about">About Me</NuxtLink>
+              <NuxtLink class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-shrikhand text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:border-indigo-500 focus:text-gray-900" to="/projects">Projects</NuxtLink>
             </div>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -32,9 +32,9 @@
       <DisclosurePanel class="sm:hidden">
         <div class="space-y-1 pb-4 pt-2">
           <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-          <DisclosureButton as="a" href="/" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-groovy text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 focus:text-indigo-700 focus:border-indigo-500 focus:bg-indigo-50">Home</DisclosureButton>
-          <DisclosureButton as="a" href="/about" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-groovy text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 focus:text-indigo-700 focus:border-indigo-500 focus:bg-indigo-50">About Me</DisclosureButton>
-          <DisclosureButton as="a" href="/projects" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-groovy text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 focus:text-indigo-700 focus:border-indigo-500 focus:bg-indigo-50">Projects</DisclosureButton>
+          <DisclosureButton as="a" href="/" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-shrikhand text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 focus:text-indigo-700 focus:border-indigo-500 focus:bg-indigo-50">Home</DisclosureButton>
+          <DisclosureButton as="a" href="/about" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-shrikhand text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 focus:text-indigo-700 focus:border-indigo-500 focus:bg-indigo-50">About Me</DisclosureButton>
+          <DisclosureButton as="a" href="/projects" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-shrikhand text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 focus:text-indigo-700 focus:border-indigo-500 focus:bg-indigo-50">Projects</DisclosureButton>
         </div>
       </DisclosurePanel>
     </Disclosure>
