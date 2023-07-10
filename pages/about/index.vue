@@ -1,5 +1,6 @@
+<!-- FIXME: Adjust this layout to be similar to projects grid -->
 <template>   
-    <div class="flex items-center justify-center p-4 pt-20 pb-20 sm:p-20">
+    <div class="flex items-center justify-center p-4 pt-20 pb-20 md-icon:p-20">
       <div class="container grid gap-8 grid-cols-1 grid-rows-5 max-w-5xl lg:grid-cols-2 lg:grid-rows-3">
         <div class="flex bg-white p-4 rounded-md shadow-md text-center row-span-1">
           <div class="p-10">
@@ -19,31 +20,31 @@
         <div class="flex bg-white p-4 rounded-md shadow-md row-span-1 lg:col-span-2 lg:row-span-1">
           <div class="flex-1 p-10">
             <TabGroup>
-              <TabList class="flex space-x-1 rounded-md bg-peachy-pink p-1">
+              <TabList class="space-x-0 rounded-md bg-cool-green p-1 sm:flex sm:space-x-1">
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-md py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
+                      'w-full rounded-md py-2.5 text-md font-shrikhand leading-5 text-cool-green-dark sm:text-xl',
                       'focus:outline-none focus:ring-0',
-                      selected ? 'bg-white shadow' : 'text-peachy-pink-dark hover:bg-white/[0.12] hover:text-white',]">
+                      selected ? 'bg-white shadow' : 'text-cool-green-dark hover:bg-white/[0.12] hover:text-white',]">
                     Languages
                   </button>
                 </Tab>
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-md py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
+                      'w-full rounded-md py-2.5 text-xl font-shrikhand leading-5 text-cool-green-dark',
                       'focus:outline-none focus:ring-0',
-                      selected ? 'bg-white shadow' : 'text-peachy-pink-dark hover:bg-white/[0.12] hover:text-white',]">
+                      selected ? 'bg-white shadow' : 'text-cool-green-dark hover:bg-white/[0.12] hover:text-white',]">
                     Frameworks
                   </button>
                 </Tab>
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-md py-2.5 text-md font-semibold leading-5 text-peachy-pink-dark',
+                      'w-full rounded-md py-2.5 text-md font-shrikhand leading-5 text-cool-green-dark sm:text-xl',
                       'focus:outline-none focus:ring-0',
-                      selected ? 'bg-white shadow' : 'text-peachy-pink-dark hover:bg-white/[0.12] hover:text-white',]">
+                      selected ? 'bg-white shadow' : 'text-cool-green-dark hover:bg-white/[0.12] hover:text-white',]">
                     Tools
                   </button>
                 </Tab>

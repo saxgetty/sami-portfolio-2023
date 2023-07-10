@@ -3,43 +3,42 @@
 <!-- @Author: Sami Saxton-Getty -->
 <!-- grid-flow-row auto-rows-max -->
 <template>
-    <!-- TODO: Style -->
-    <Transition appear leave-to-class="translate-x-[150%] opacity-0"
-      leave-active-class="transition duration-300">
+    <Transition appear>
       <div>     
-        <div class="flex min-h-screen flex-col">
-          <div class="mt-20 mx-auto items-center">
-            <div>
-              <HomeAvatar />
-            </div>  
-          </div>
-          <div class="mt-10 mx-auto items-center">
-            <div class="flex flex-col text-4xl font-shrikhand text-calm-blue md-icon:flex-row smX:text-6xl xs:text-5xl">
-              <div class="pr-0 pb-5 text-center md:pr-5 md:pb-0">
-                Sami
-              </div>
-              <div class="text-center">
-                Saxton-Getty
+        <div class="flex flex-col items-center p-4 pt-20 pb-20 md-icon:p-20 lg:min-h-screen">
+          <div class="max-w-5xl break-words bg-white w-full mb-6 shadow-md rounded-md">
+            <div class="px-6">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full flex justify-center mb-5">
+                  <HomeAvatar />
+                </div>
+            </div>
+            <div class="text-center mt-20">
+                <h3 class="text-6xl font-shrikhand text-cool-purple drop-shadow-lg leading-normal mb-1">Sami Saxton-Getty</h3>
+                <div class="text-lg mt-0 mb-2 text-cool-green-dark font-bold uppercase">
+                    <i class="fas fa-map-marker-alt mr-2 opacity-75"></i>Temecula, California
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="flex flex-wrap justify-center">
+                  <div class="mt-10 pb-20 mx-auto p-4 items-center w-full max-w-4xl">
+                    <div class="flex flex-col">
+                      <div>
+                        <HomeSocialsEmail />
+                      </div>
+                      <div class="my-10">
+                        <HomeSocialsLinkedin />
+                      </div>
+                      <div>
+                        <HomeSocialsGithub />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div> 
-          <div class="mt-10 mx-auto p-4 items-center w-full max-w-4xl lgX:w-3/4">
-            <div class="flex flex-col pb-20">
-              <div>
-                <HomeSocialsEmail />
-              </div>
-              <div class="my-10">
-                <HomeSocialsLinkedin />
-              </div>
-              <div>
-                <HomeSocialsGithub />
-              </div>
-            </div>
-          </div>
+          </div>  
         </div>
       </div>
-  </Transition>
+    </Transition>
 </template>
-
-<script setup>
-</script>
