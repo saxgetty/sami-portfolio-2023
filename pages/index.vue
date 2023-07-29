@@ -2,9 +2,11 @@
 <!-- @File Name: index.vue -->
 <!-- @Author: Sami Saxton-Getty -->
 <!-- grid-flow-row auto-rows-max -->
+
+
+  
 <template>
-    <Transition appear>
-      <div>     
+      <div>    
         <div class="flex flex-col items-center p-4 pt-20 pb-20 md-icon:p-20 lg:min-h-screen">
           <div class="max-w-5xl break-words bg-white w-full mb-6 shadow-2xl rounded-md">
             <div class="px-6">
@@ -40,5 +42,4 @@
           </div>  
         </div>
       </div>
-    </Transition>
 </template>

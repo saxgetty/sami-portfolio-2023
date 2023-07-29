@@ -5,3 +5,4 @@
         Self-awareness is the most important to me because I can apply it to teamwork and team environments so that I interact well with people who share different characteristics, strengths, perspectives, and viewpoints.
     </p>
 </template>
+<!-- #D97A4E -->
