@@ -78,6 +78,9 @@
                     <div class="mx-auto">
                       <AboutSkillsLanguagesSwift />
                     </div>
+                    <div class="mx-auto">
+                      <AboutSkillsLanguagesTypescript />
+                    </div>
                   </div>
                 </TabPanel>
                 <TabPanel>
@@ -100,7 +103,37 @@
                     </div>
                   </div>
                 </TabPanel>
-                <TabPanel>Content 3</TabPanel>
+                <TabPanel>
+                  <div class="grid grid-cols-3 grid-rows-2 items-center justify-center gap-7 pt-10 md:grid-cols-5 md:grid-rows-2">
+                    <div class="mx-auto">
+                      <AboutSkillsToolsDatabase />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsDbeaver />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsGithub />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsJira />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsLinux />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsPostman />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsSelenium />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsVirtualMachine />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsVisualStudio />
+                    </div>
+                  </div>
+                </TabPanel>
                 <!-- ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 -->
               </TabPanels>
             </TabGroup>

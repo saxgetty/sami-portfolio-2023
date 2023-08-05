@@ -35,7 +35,7 @@
             </div>
             <div class="mt-3 pb-10 lg:pr-9 lg:pb-0">
                 <h3 class="text-3xl font-shrikhand text-cool-green-dark">QA Engineer</h3>
-                <p class="text-lg text-cool-orange-dark">Binance.US</p>
+                <p class="text-lg text-cool-orange-dark">Binance.us</p>
                 <time class="block mb-2 text-md font-normal leading-none text-gray-600">Dec 2022 - Aug 2023</time>     
             </div>
         </li>
