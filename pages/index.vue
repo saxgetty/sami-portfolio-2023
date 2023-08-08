@@ -31,8 +31,11 @@
                       <div class="py-10 px-0 sm:py-0 sm:px-10">
                         <HomeSocialsLinkedin />
                       </div>
-                      <div>
+                      <div class="pb-10 pr-0 sm:pb-0 sm:pr-10">
                         <HomeSocialsGithub />
+                      </div>
+                      <div>
+                        <HomeSocialsEtsy />
                       </div>
                     </div>
                   </div>

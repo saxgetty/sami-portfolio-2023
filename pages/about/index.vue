@@ -91,7 +91,10 @@
                     <div class="mx-auto">
                       <AboutSkillsFrameworksMaterialUi />
                     </div>
-                    <!-- FIXME: I need a better solution to this icon -->
+                    <!-- FIXME: I need a better solution to this icons -->
+                    <div class="mx-auto">
+                      <AboutSkillsFrameworksNextJs />
+                    </div>
                     <div class="mx-auto">
                       <AboutSkillsFrameworksNuxtJs />
                     </div>
@@ -106,6 +109,9 @@
                 <TabPanel>
                   <div class="grid grid-cols-3 grid-rows-2 items-center justify-center gap-7 pt-10 md:grid-cols-5 md:grid-rows-2">
                     <div class="mx-auto">
+                      <AboutSkillsToolsAws />
+                    </div>
+                    <div class="mx-auto">
                       <AboutSkillsToolsDatabase />
                     </div>
                     <div class="mx-auto">
@@ -113,6 +119,9 @@
                     </div>
                     <div class="mx-auto">
                       <AboutSkillsToolsGithub />
+                    </div>
+                    <div class="mx-auto">
+                      <AboutSkillsToolsIntelliJ />
                     </div>
                     <div class="mx-auto">
                       <AboutSkillsToolsJira />
