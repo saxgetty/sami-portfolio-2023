@@ -38,10 +38,14 @@
       </DisclosurePanel>
     </Disclosure>
 
-    <div>
+    <div class="global-bg">
       <slot />
     </div>
 </template>
+
+<style scoped>
+  @import '~/assets/css/main.css';
+</style>
 
 <script setup>
     import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
