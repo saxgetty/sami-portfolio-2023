@@ -23,27 +23,27 @@
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-md py-2.5 text-xl font-shrikhand leading-5 text-cool-green-dark sm:text-xl',
+                      'w-full rounded-md py-2.5 text-xl font-shrikhand leading-5 text-creamy-beige sm:text-xl',
                       'focus:outline-none focus:ring-0',
-                      selected ? 'bg-white shadow' : 'text-cool-green-dark hover:bg-white/[0.12] hover:text-white',]">
+                      selected ? 'bg-cool-green-dark shadow' : 'text-creamy-beige hover:bg-white/[0.12] hover:text-white',]">
                     Languages
                   </button>
                 </Tab>
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-md py-2.5 text-xl font-shrikhand leading-5 text-cool-green-dark',
+                      'w-full rounded-md py-2.5 text-xl font-shrikhand leading-5 text-creamy-beige',
                       'focus:outline-none focus:ring-0',
-                      selected ? 'bg-white shadow' : 'text-cool-green-dark hover:bg-white/[0.12] hover:text-white',]">
+                      selected ? 'bg-cool-green-dark shadow' : 'text-creamy-beige hover:bg-white/[0.12] hover:text-white',]">
                     Frameworks
                   </button>
                 </Tab>
                 <Tab as="template" v-slot="{ selected }">
                   <button
                     :class="[
-                      'w-full rounded-md py-2.5 text-xl font-shrikhand leading-5 text-cool-green-dark sm:text-xl',
+                      'w-full rounded-md py-2.5 text-xl font-shrikhand leading-5 text-creamy-beige sm:text-xl',
                       'focus:outline-none focus:ring-0',
-                      selected ? 'bg-white shadow' : 'text-cool-green-dark hover:bg-white/[0.12] hover:text-white',]">
+                      selected ? 'bg-cool-green-dark shadow' : 'text-creamy-beige hover:bg-white/[0.12] hover:text-white',]">
                     Tools
                   </button>
                 </Tab>
