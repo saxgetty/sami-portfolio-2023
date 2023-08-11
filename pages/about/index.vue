@@ -112,9 +112,6 @@
                       <AboutSkillsToolsAws />
                     </div>
                     <div class="mx-auto">
-                      <AboutSkillsToolsDatabase />
-                    </div>
-                    <div class="mx-auto">
                       <AboutSkillsToolsDbeaver />
                     </div>
                     <div class="mx-auto">

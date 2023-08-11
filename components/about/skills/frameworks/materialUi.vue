@@ -1,3 +1,3 @@
 <template>
-    <img class="inline-block h-18 w-18 md-icon:h-20 md-icon:w-20" src="https://i.imgur.com/lS7XuE2.png" alt="material-ui"/>
+    <img class="inline-block h-18 w-18 md-icon:h-20 md-icon:w-20" src="https://i.imgur.com/l46pX2o.png" alt="material-ui"/>
 </template>
