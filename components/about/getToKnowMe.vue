@@ -1,6 +1,6 @@
 <template>
     <p class="mt-5 text-5xl font-shrikhand text-cool-purple drop-shadow-lg">GET TO KNOW ME</p>
-    <p class="mt-10 text-lg">
+    <p class="mt-10 text-xl">
         Hey there, my name is 
         <span class="before:block before:absolute before:-inset-0 before:-skew-y-3 before:bg-cool-green relative inline-block">
             <span class="relative text-white">Sami!</span>

@@ -1,6 +1,6 @@
 <template>
     <p class="mt-5 text-5xl font-shrikhand text-cool-purple drop-shadow-lg">CORE VALUES</p>
-    <p class="mt-10 text-lg">
+    <p class="mt-10 text-xl">
         Some of my core values include self-awareness, integrity, dedication, respect, and a positive outlook.
         <span class="before:block before:absolute before:-inset-0 before:-skew-y-3 before:bg-cool-green relative inline-block">
             <span class="relative text-white">Self-awareness</span>

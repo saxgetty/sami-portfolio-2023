@@ -8,9 +8,9 @@
                 <div class="bg-cool-pink h-0.5 lg:flex w-full h-1"></div>
             </div>
             <div class="mt-3 pb-10 lg:pr-9 lg:pb-0">
-                <h3 class="text-3xl font-shrikhand text-cool-green">QA Engineer</h3>
-                <p class="text-lg text-cool-pink-dark">Binance.us</p>
-                <time class="block mb-2 text-md font-normal leading-none text-cool-pink-muted">Dec 2022 - Aug 2023</time>     
+                <h3 class="text-4xl font-shrikhand text-cool-green">QA Engineer</h3>
+                <p class="text-xl text-cool-pink-dark">Binance.us</p>
+                <time class="block mb-2 text-lg font-normal leading-none text-cool-pink-muted">Dec 2022 - Aug 2023</time>     
             </div>
         </li>
         <li class="mb-6 lg:mb-0">
@@ -21,9 +21,9 @@
                 <div class="bg-cool-pink h-0.5 lg:flex w-full h-1"></div>
             </div>
             <div class="mt-3 pb-10 lg:pr-9 lg:pb-0"> 
-                <h3 class="text-3xl font-shrikhand text-cool-green">B.S. Computer Science</h3>
-                <p class="text-lg text-cool-pink-dark">San Francisco State University</p>
-                <time class="block mb-2 text-md font-normal leading-none text-cool-pink-muted">Aug 2019 - May 2022</time>   
+                <h3 class="text-4xl font-shrikhand text-cool-green">B.S. Computer Science</h3>
+                <p class="text-xl text-cool-pink-dark">San Francisco State University</p>
+                <time class="block mb-2 text-lg font-normal leading-none text-cool-pink-muted">Aug 2019 - May 2022</time>   
             </div>
         </li>
         <li class="mb-6 lg:mb-0">
@@ -34,9 +34,9 @@
                 <div class="bg-cool-pink h-0.5 lg:flex w-full h-1"></div>
             </div>
             <div class="mt-3 pb-10 lg:pr-9 lg:pb-0">
-                <h3 class="text-3xl font-shrikhand text-cool-green">QC Specialist</h3>
-                <p class="text-lg text-cool-pink-dark">Freedom Forever</p>
-                <time class="block mb-2 text-md font-normal leading-none text-cool-pink-muted">Jan 2019 - Sep 2021</time>       
+                <h3 class="text-4xl font-shrikhand text-cool-green">QC Specialist</h3>
+                <p class="text-xl text-cool-pink-dark">Freedom Forever</p>
+                <time class="block mb-2 text-lg font-normal leading-none text-cool-pink-muted">Jan 2019 - Sep 2021</time>       
             </div>
         </li>
     </ol>

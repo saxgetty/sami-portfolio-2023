@@ -19,13 +19,19 @@
             </DisclosureButton>
           </div>
           <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
-            <div class="hidden sm:ml-6 sm:flex sm:space-x-8"> 
-              <!-- FIXME: Adjust the nav tabs so that upon reload the active tab is still highlighted -->
-              <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-              
-              <NuxtLink to="/" class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-2xl font-shrikhand text-creamy-beige hover:border-cool-green-dark hover:text-cool-green-dark focus:border-cool-green-dark focus:text-cool-green-dark" :class="{ 'text-cool-green-dark border-cool-green-dark': isActive('/') }">Home</NuxtLink>
-              <NuxtLink to="/about" class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-2xl font-shrikhand text-creamy-beige hover:border-cool-green-dark hover:text-cool-green-dark focus:border-cool-green-dark focus:text-cool-green-dark" :class="{ 'text-cool-green-dark border-cool-green-dark': isActive('/about') }">About Me</NuxtLink>
-              <NuxtLink to="/projects" class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-2xl font-shrikhand text-creamy-beige hover:border-cool-green-dark hover:text-cool-green-dark focus:border-cool-green-dark focus:text-cool-green-dark" :class="{ 'text-cool-green-dark border-cool-green-dark': isActive('/projects') }">Projects</NuxtLink>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8 text-creamy-beige"> 
+              <NuxtLink to="/" class="inline-flex items-center px-1 pt-1 text-2xl font-shrikhand hover:border-b-4 hover:border-cool-green-dark hover:text-cool-green-dark focus:border-cool-green-dark focus:text-cool-green-dark" 
+                :class="{ 'text-cool-green-dark border-b-4 border-cool-green-dark': isActive('/') }">
+                  Home
+              </NuxtLink>
+              <NuxtLink to="/about" class="inline-flex items-center px-1 pt-1 text-2xl font-shrikhand hover:border-b-4 hover:border-cool-green-dark hover:text-cool-green-dark focus:border-cool-green-dark focus:text-cool-green-dark" 
+                :class="{ 'text-cool-green-dark border-b-4 border-cool-green-dark': isActive('/about') }">
+                  About Me
+              </NuxtLink>
+              <NuxtLink to="/projects" class="inline-flex items-center px-1 pt-1 text-2xl font-shrikhand hover:border-b-4 hover:border-cool-green-dark hover:text-cool-green-dark focus:border-cool-green-dark focus:text-cool-green-dark" 
+                :class="{ 'text-cool-green-dark border-b-4 border-cool-green-dark': isActive('/projects') }">
+                  Projects
+              </NuxtLink>
             </div>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -34,13 +40,20 @@
         </div>
       </div>
 
-      <!-- FIXME: Adjust the nav tabs so that upon reload the active tab is still highlighted -->
       <DisclosurePanel class="sm:hidden">
-        <div class="space-y-1 pb-4 pt-2">
-          <NuxtLink to="/" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-xl font-shrikhand text-creamy-beige hover:border-cool-green-dark hover:bg-creamy-beige hover:text-cool-green-dark focus:text-cool-green-dark focus:border-cool-green-dark focus:bg-creamy-beige">Home</NuxtLink>
-          <NuxtLink to="/about" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-xl font-shrikhand text-creamy-beige hover:border-cool-green-dark hover:bg-creamy-beige hover:text-cool-green-dark focus:text-cool-green-dark focus:border-cool-green-dark focus:bg-creamy-beige">About Me</NuxtLink>
-          <NuxtLink to="/projects" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-xl font-shrikhand text-creamy-beige hover:border-cool-green-dark hover:bg-creamy-beige hover:text-cool-green-dark focus:text-cool-green-dark focus:border-cool-green-dark focus:bg-creamy-beige">Projects</NuxtLink>
-          <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+        <div class="space-y-1 pb-4 pt-2 text-creamy-beige">
+          <NuxtLink to="/" class="block py-2 pl-3 pr-4 text-2xl font-shrikhand hover:border-l-4 hover:border-cool-green-dark hover:bg-creamy-beige hover:text-cool-green-dark focus:text-cool-green-dark focus:border-cool-green-dark focus:bg-creamy-beige"
+            :class="{ 'text-cool-green-dark border-l-4 border-cool-green-dark bg-creamy-beige': isActive('/') }">
+              Home
+          </NuxtLink>
+          <NuxtLink to="/about" class="block py-2 pl-3 pr-4 text-2xl font-shrikhand hover:border-l-4 hover:border-cool-green-dark hover:bg-creamy-beige hover:text-cool-green-dark focus:text-cool-green-dark focus:border-cool-green-dark focus:bg-creamy-beige"
+            :class="{ 'text-cool-green-dark border-l-4 border-cool-green-dark bg-creamy-beige': isActive('/about') }">
+              About
+          </NuxtLink>
+          <NuxtLink to="/projects" class="block py-2 pl-3 pr-4 text-2xl font-shrikhand hover:border-l-4 hover:border-cool-green-dark hover:bg-creamy-beige hover:text-cool-green-dark focus:text-cool-green-dark focus:border-cool-green-dark focus:bg-creamy-beige"
+            :class="{ 'text-cool-green-dark border-l-4 border-cool-green-dark bg-creamy-beige': isActive('/projects') }">
+              Projects
+          </NuxtLink>
         </div>
       </DisclosurePanel>
     </Disclosure>
@@ -51,7 +64,7 @@
 </template>
 
 <script setup>
-    import { useRoute } from 'vue-router';
+    import { useRoute, useRouter } from 'vue-router';
     import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
     import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 
@@ -59,6 +72,26 @@
     const isActive = (route) => {
       const $route = useRoute();
       return $route.path === route;
+    };
+
+    // Define the beforeRouteEnter navigation guard
+    const beforeRouteEnter = (to, from, next) => {
+      if (!to.hash) {
+        // Scroll to top of the page on route change
+        window.scrollTo(0, 0);
+
+        // Set the active tab to "Home" on initial render
+        // You can modify this logic if you're using named routes
+        // For example, if your named route for Home is "home"
+        if (to.path === '/') {
+          // Activate the "Home" tab
+          next((vm) => {
+            vm.isActive = isActive('/');
+          });
+        }
+      }
+
+      next();
     };
     </script>
 
