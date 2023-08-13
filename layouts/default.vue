@@ -93,9 +93,9 @@
 
       next();
     };
-    </script>
+</script>
 
-    <script>
+<script>
     import { defineComponent } from 'vue';
 
     export default defineComponent({

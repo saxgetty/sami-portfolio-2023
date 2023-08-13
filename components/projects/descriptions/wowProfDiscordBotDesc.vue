@@ -1,9 +1,4 @@
 <template>
-    <img
-        src="https://i.imgur.com/jgl3g5y.png"   
-        class="aspect-video w-full object-cover"
-        alt=""
-    />
     <div class="p-4">
         <p class="mb-2 text-lg text-cool-pink-dark"><time>June 2021</time></p>
         <h3 class="text-2xl font-shrikhand text-cool-green-dark">WoW Professions Discord Bot</h3>
