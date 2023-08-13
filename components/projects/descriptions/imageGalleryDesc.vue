@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4">
+    <div class="p-4 items-start">
         <p class="mb-2 text-lg text-cool-pink-dark"><time>May 2021</time></p>
         <h3 class="text-2xl font-shrikhand text-cool-green-dark">Image Gallery</h3>
         <p class="mt-1 text-lg">Project Image Gallery is an individually made web based application created with JavaScript. 
