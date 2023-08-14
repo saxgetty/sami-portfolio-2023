@@ -1,6 +1,6 @@
 <template>
     <img
-        src="https://i.imgur.com/XAM9Lw0.png"
+        src="https://i.imgur.com/irTOE9l.png"
         class="aspect-video w-full object-cover"
         alt=""
     />

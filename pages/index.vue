@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <div class="flex flex-col items-center p-4 pt-20 pb-20 md-icon:p-20 lg:min-h-screen animate-slide-in">
+    <div class="flex flex-col items-center p-4 pt-20 pb-20 md-pad:p-20 lg:min-h-screen animate-slide-in">
       <div class="max-w-6xl break-words bg-white w-full mb-6 shadow-2xl rounded-md">
         <div class="px-6">
           <div class="flex flex-wrap justify-center">

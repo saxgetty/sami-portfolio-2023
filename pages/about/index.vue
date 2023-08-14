@@ -1,6 +1,6 @@
 <template>
   <div class="animate-slide-in">
-    <div class="flex items-center justify-center p-4 pt-20 pb-20 md-icon:p-20">
+    <div class="flex items-center justify-center p-4 pt-20 pb-20 md-pad:p-20">
       <div class="container grid gap-8 grid-cols-1 grid-rows-10 max-w-6xl lg:grid-cols-2 lg:grid-rows-3">
         <div class="flex bg-white p-4 rounded-md shadow-2xl text-center row-span-2 lg:row-span-1 animate-slide-in-delayed">
           <div class="p-10 animate-slide-in-delayed">

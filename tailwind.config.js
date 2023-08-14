@@ -16,6 +16,7 @@ module.exports = {
         'karla': ['Karla', 'sans-serif'],
       },
       colors: {
+        'cool-green-opaque': '#A5CCC2',
         'cool-green': '#85A49C',
         'cool-green-dark': '#537D79',
         'cool-orange': '#F7CAC5',
@@ -33,7 +34,8 @@ module.exports = {
         'xs': '450px',
         'smX': '500px',
         'sm': '650px',
-        'md-icon': '815px',
+        'md-pad': '815px',
+        'md-icon': '860px',
         'mdX': '900px',
         'project-md': '1000px',
         'lg': '1150px',
