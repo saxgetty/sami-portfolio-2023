@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="" to="mailto:saxgetty4@gmail.com" target="_blank">
+  <NuxtLink class="" to="mailto:sax.freelances@gmail.com" target="_blank">
     <button
       type="button"
       class="w-full inline-flex items-center rounded-md px-3.5 py-2.5 shadow-sm bg-cool-green fill-creamy-beige hover:bg-cool-green-dark"
