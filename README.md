@@ -4,11 +4,9 @@ This project refines my 2022 portfolio, showcasing the harmonious use of Vue.js 
 
 https://sami-saxton-getty.netlify.app/
 
-## Nuxt 3 Minimal Starter
+![Screenshot 2023-08-17 184652](https://github.com/saxgetty/Sami_Portfolio_2023/assets/67216252/7571a8ef-987c-4d1f-88ec-9e388143afe0)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-### Setup
+## Setup
 
 Make sure to install the dependencies:
 
@@ -23,7 +21,7 @@ pnpm install
 yarn install
 ```
 
-### Development Server
+## Development Server
 
 Start the development server on `http://localhost:3000`:
 
@@ -38,7 +36,7 @@ pnpm run dev
 yarn dev
 ```
 
-### Production
+## Production
 
 Build the application for production:
 
