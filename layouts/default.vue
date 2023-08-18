@@ -1,7 +1,4 @@
 <template>
-  <head>
-    <meta name="p:domain_verify" content="d00a4330ea1e6735fb7debdafca1670c"/> <!-- Pinterest HTML tag -->
-  </head>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
