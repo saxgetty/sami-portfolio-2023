@@ -1,8 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Sami Saxton-Getty Portfolio 2023
+
+This project refines my 2022 portfolio, showcasing the harmonious use of Vue.js and Nuxt.js on GitHub. It emphasizes clean code, organized files, and modern design with a personal touch. Additionally, I implemented smooth animated transitions for enhanced user experience during page changes and rendering. 
+
+https://sami-saxton-getty.netlify.app/
+
+## Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+### Setup
 
 Make sure to install the dependencies:
 
@@ -17,7 +23,7 @@ pnpm install
 yarn install
 ```
 
-## Development Server
+### Development Server
 
 Start the development server on `http://localhost:3000`:
 
@@ -32,7 +38,7 @@ pnpm run dev
 yarn dev
 ```
 
-## Production
+### Production
 
 Build the application for production:
 
