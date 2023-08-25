@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-end">
-    <NuxtLink to="https://github.com/saxgetty/BusyGator" target="_blank">
+    <NuxtLink to="https://github.com/saxgetty/busy-gator" target="_blank">
       <button
         type="button"
         class="inline-flex rounded-md px-3.5 py-2.5 shadow-md bg-cool-pink fill-cool-pink-dark hover:bg-cool-green hover:fill-cool-green-dark"

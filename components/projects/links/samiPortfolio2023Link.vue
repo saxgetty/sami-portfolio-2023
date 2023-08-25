@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-end">
     <NuxtLink
-      to="https://github.com/saxgetty/Sami_Portfolio_2023"
+      to="https://github.com/saxgetty/sami-portfolio-2023"
       target="_blank"
     >
       <button

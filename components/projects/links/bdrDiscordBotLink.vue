@@ -1,7 +1,7 @@
 <template>
   <!-- -mt-20 mr-4 mb-4 -->
   <div class="flex justify-end">
-    <NuxtLink to="https://github.com/saxgetty/BDR_Discord_Bot" target="_blank">
+    <NuxtLink to="https://github.com/saxgetty/bdr-discord-bot" target="_blank">
       <button
         type="button"
         class="inline-flex rounded-md px-3.5 py-2.5 shadow-md bg-cool-pink fill-cool-pink-dark hover:bg-cool-green hover:fill-cool-green-dark"
