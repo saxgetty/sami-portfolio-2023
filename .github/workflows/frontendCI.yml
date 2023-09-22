@@ -25,13 +25,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd ./
+          npm install
 
       - name: Build Nuxt.js app
-        run: npm run build
+        run: |
+          cd ./
+          npm run build
 
       - name: Test Nuxt.js app
-        run: npm run test 
+        run: |
+          cd ./
+          npm run test 
