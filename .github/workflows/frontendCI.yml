@@ -35,4 +35,4 @@ jobs:
       - name: Test Nuxt.js app
         run: |
           cd ./
-          npm test 
+          npm run test 
