@@ -18,7 +18,7 @@
     "typescript": "latest"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.16",
+    "@headlessui/vue": "^1.7.17",
     "@heroicons/vue": "^2.1.1"
   }
 }
