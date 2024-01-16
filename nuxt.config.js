@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+  modules: ['@vueuse/motion/nuxt'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -10,5 +11,11 @@ export default defineNuxtConfig({
   },
   layouts: {
     default: "~/layouts/default.vue",
+  },
+  runtimeConfig: {
+    public: {
+      motion: {
+      }
+    }
   },
 })

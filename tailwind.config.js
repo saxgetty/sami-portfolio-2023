@@ -8,27 +8,16 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./app.vue",
   ],
+  daisyui: {
+    themes: ["lemonade"],
+  },
   theme: {
     extend: {
       fontFamily: {
-        'groovy': ['abstractGroovy'],
-        'shrikhand': ['Shrikhand', 'cursive'],
-        'karla': ['Karla', 'sans-serif'],
-      },
-      colors: {
-        'cool-green-opaque': '#A5CCC2',
-        'cool-green': '#85A49C',
-        'cool-green-dark': '#537D79',
-        'cool-orange': '#F7CAC5',
-        'cool-orange-dark': '#B8C2CC',
-        'cool-purple': '#F18382',
-        'cool-pink-opaque': '#FAE8E6',
-        'cool-pink': '#F7CAC5',
-        'cool-pink-muted': '#E3AEA8',
-        'cool-pink-dark': '#F18382',
-        'cool-yellow': '#F7BC62',
-        'cool-brown': '#482B1D',
-        'creamy-beige': '#F5EEDB',
+        'medieval': ['MedievalSharp', 'cursive'],
+        // 'groovy': ['abstractGroovy'],
+        // 'shrikhand': ['Shrikhand', 'cursive'],
+        // 'karla': ['Karla', 'sans-serif'],
       },
       screens: {
         'xs': '450px',
@@ -44,5 +33,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
