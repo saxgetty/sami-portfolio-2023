@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-wrap justify-center gap-8">
-    <img src="@/assets/images/avatar.svg" alt="avatar" class="w-72 h-72" />
-    <div class="flex grow flex-wrap flex-col items-center">
-      <h1 class="text-3xl font-medieval">CHARACTER DETAILS</h1>
-      <div class="card card-bordered w-full h-56">
+    <img src="@/assets/images/avatar.svg" alt="avatar" class="flex grow w-72 h-72" />
+    <div class="flex grow flex-col items-center">
+      <h1 class="text-3xl font-medieval">PRIMARY STATS</h1>
+      <div class="card card-bordered w-full h-60">
         <div class="card-body">
           <h2 class="card-title">Sami Saxton-Getty</h2>
           <h3>Title</h3>
@@ -14,9 +14,9 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap flex-col items-center">
+    <div class="flex flex-col items-center">
       <h1 class="text-3xl font-medieval">BACKSTORY</h1>
-      <div class="card card-bordered w-full h-80">
+      <div class="card card-bordered w-full">
         <div class="card-body">
           <p>
             Hey there, my name is Sami! I am a passionate and determined
@@ -35,8 +35,8 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap flex-col items-center">
-      <h1 class="text-3xl font-medieval">JOURNEY</h1>
+    <div class="flex flex-col items-center">
+      <h1 class="text-3xl font-medieval">EXPERIENCE</h1>
       <ul class="timeline timeline-vertical lg:timeline-horizontal">
         <li>
           <div class="timeline-start">2019 - 2022</div>
@@ -119,7 +119,7 @@
         </li>
         <li>
           <hr />
-          <div class="timeline-start">2015</div>
+          <div class="timeline-start">2022 - 2023</div>
           <div class="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@
               />
             </svg>
           </div>
-          <div class="timeline-end timeline-box">Apple Watch</div>
+          <div class="timeline-end timeline-box">Binance.us</div>
         </li>
       </ul>
     </div>
