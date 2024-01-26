@@ -1,22 +1,29 @@
 <template>
   <div class="flex flex-wrap justify-center gap-8">
-    <img src="@/assets/images/avatar.svg" alt="avatar" class="flex grow w-72 h-72" />
-    <div class="flex grow flex-col items-center">
-      <h1 class="text-3xl font-medieval">PRIMARY STATS</h1>
-      <div class="card card-bordered w-full h-60">
+    <img
+      src="@/assets/images/avatar.svg"
+      alt="avatar"
+      class="flex grow w-72 h-72"
+    />
+    <div class="flex grow flex-col items-center pt-4">
+      <h1 class="flex p-2 w-3/4 lg:w-full border-double border-6 border-black text-4xl font-medieval justify-center">PRIMARY STATS</h1>
+      <div class="card w-5/6 lg:w-full">
         <div class="card-body">
-          <h2 class="card-title">Sami Saxton-Getty</h2>
-          <h3>Title</h3>
-          <p>Level 26</p>
-          <p>Female Human</p>
-          <p>She/They</p>
+          <h2 class="card-title justify-center">Sami Saxton-Getty</h2>
+          <div class="flex flex-wrap justify-center gap-2">
+            <div class="badge badge-outline">Title</div>
+            <div class="badge badge-outline">Level 26</div>
+            <div class="badge badge-outline">Female</div>
+            <div class="badge badge-outline">Human</div>
+            <div class="badge badge-outline">She/They</div>
+          </div>
           <div class="card-actions justify-end"></div>
         </div>
       </div>
     </div>
     <div class="flex flex-col items-center">
-      <h1 class="text-3xl font-medieval">BACKSTORY</h1>
-      <div class="card card-bordered w-full">
+      <h1 class="flex p-2 w-3/4 lg:w-full border-double border-6 border-black text-4xl font-medieval justify-center">BACKSTORY</h1>
+      <div class="card w-5/6 lg:w-full">
         <div class="card-body">
           <p>
             Hey there, my name is Sami! I am a passionate and determined
@@ -35,11 +42,11 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center">
-      <h1 class="text-3xl font-medieval">EXPERIENCE</h1>
+    <div class="flex grow flex-col items-center">
+      <h1 class="flex p-2 w-3/4 lg:w-full border-double border-6 border-black text-4xl font-medieval justify-center">EXPERIENCE</h1>
       <ul class="timeline timeline-vertical lg:timeline-horizontal">
         <li>
-          <div class="timeline-start">2019 - 2022</div>
+          <div class="timeline-start">2019</div>
           <div class="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
