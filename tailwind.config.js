@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'medieval': ['MedievalSharp', 'cursive'],
+        'general': ['Cormorant Garamond', 'serif'],
         // 'groovy': ['abstractGroovy'],
         // 'shrikhand': ['Shrikhand', 'cursive'],
         // 'karla': ['Karla', 'sans-serif'],

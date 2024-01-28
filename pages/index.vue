@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap flex-col flex-auto max-w-lg lg:max-w-3xl">
+  <div class="flex flex-wrap flex-col flex-auto max-w-lg lg:max-w-3xl space-y-12 lg:space-y-0">
     <section id="one" class="flex items-center justify-center h-fit lg:h-screen">
       <Greeting  />
     </section>
@@ -12,8 +12,8 @@
       <Skills />
     </section>
     <Divider />
-    <section id="four" class="flex items-center justify-center h-fit lg:h-screen">
-      <h1 class="text-4xl">QUEST LOG</h1>
+    <section id="four" class="flex items-center justify-center h-fit lg:h-screen pb-20 lg:pb-0">
+      <Quests />
     </section>
   </div>
 </template>
@@ -23,7 +23,7 @@ import Greeting from "~/components/home/greeting.vue"
 import Character from "~/components/home/character.vue"
 import Skills from "~/components/home/skills.vue"
 import Divider from "~/components/home/divider.vue"
-// import Projects from "~/components/home/projects.vue"
+import Quests from "~/components/home/quests.vue"
 </script>
 
 <style scoped>

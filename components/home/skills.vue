@@ -1,7 +1,7 @@
 <!-- gap-8 lg:gap-16  flex grow flex-col flex-wrap lg:flex-row-->
 <template>
-  <div class="flex grow flex-col flex-wrap gap-y-8 lg:flex-row lg:grow-0">
-    <div class="flex flex-col items-center w-full lg:w-1/2">
+  <div class="flex grow flex-col flex-wrap gap-y-12 lg:flex-row lg:grow-0">
+    <div class="flex flex-col items-center w-full lg:w-1/2 pr-0 lg:pr-6">
       <h1
         class="flex p-2 w-3/4 lg:w-full border-double border-6 border-black text-4xl font-medieval justify-center"
       >
@@ -20,7 +20,7 @@
         <progress class="progress w-72" value="70" max="100"></progress>
       </div>
     </div>
-    <div class="flex flex-col items-center w-full lg:w-1/2 lg:ml-auto">
+    <div class="flex flex-col items-center w-full lg:w-1/2 lg:ml-auto pr-0 lg:pl-6">
       <h1
         class="flex p-2 w-3/4 lg:w-full border-double border-6 border-black text-4xl font-medieval justify-center"
       >
@@ -39,7 +39,7 @@
         <progress class="progress w-72" value="50" max="100"></progress>
       </div>
     </div>
-    <div class="flex flex-col items-center w-full lg:w-1/2">
+    <div class="flex flex-col items-center w-full lg:w-1/2 pr-0 lg:pr-6">
       <h1
         class="flex p-2 w-3/4 lg:w-full border-double border-6 border-black text-4xl font-medieval justify-center"
       >
@@ -58,7 +58,7 @@
         <progress class="progress w-72" value="50" max="100"></progress>
       </div>
     </div>
-    <div class="flex flex-col items-center w-full lg:w-1/2 lg:ml-auto">
+    <div class="flex flex-col items-center w-full lg:w-1/2 lg:ml-auto pr-0 lg:pl-6">
       <h1
         class="flex p-2 w-3/4 lg:w-full border-double border-6 border-black text-4xl font-medieval justify-center"
       >

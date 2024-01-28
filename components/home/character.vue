@@ -44,7 +44,7 @@
     </div>
     <div class="flex grow flex-col items-center">
       <h1 class="flex p-2 w-3/4 lg:w-full border-double border-6 border-black text-4xl font-medieval justify-center">EXPERIENCE</h1>
-      <ul class="timeline timeline-vertical lg:timeline-horizontal">
+      <ul class="timeline timeline-vertical lg:timeline-horizontal pt-6 lg:pt-6">
         <li>
           <div class="timeline-start">2019</div>
           <div class="timeline-middle">
