@@ -1,0 +1,11 @@
+<script setup></script>
+
+<template>
+  <nav>
+    <a href="#greetings" class=""> • </a>
+    <a href="#about" class=""> • </a>
+    <a href="#experience" class=""> • </a>
+    <a href="#projects" class=""> • </a>
+    <a href="#contact" class=""> • </a>
+  </nav>
+</template>
