@@ -1,5 +1,5 @@
-<script setup>
-	const background = 'bg-backgroundColorSecondary'
+<script setup lang="ts">
+	const background: string = 'bg-backgroundColorPrimary'
 </script>
 
 <template>
