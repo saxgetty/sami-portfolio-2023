@@ -10,7 +10,7 @@
 	<section
 		id="welcome"
 		class="snap-start h-screen">
-		<About :background="backgroundColors.welcome" />
+		<Welcome :background="backgroundColors.welcome" />
 	</section>
 	<section
 		id="about"

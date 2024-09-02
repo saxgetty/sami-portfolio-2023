@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<footer class="bg-primary p-4 text-center text-white">
+	<footer class="bg-primary p-4 text-center text-black">
 		<p>&copy; {{ currentYear }} Your Name. All rights reserved.</p>
 	</footer>
 </template>

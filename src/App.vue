@@ -8,7 +8,7 @@
 
 	onMounted(() => {
 		if (scrollContainer.value) {
-			// Additional logic can go here if needed, but should be minimal.
+			// temp
 		}
 	})
 </script>

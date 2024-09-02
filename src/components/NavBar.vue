@@ -1,7 +1,7 @@
 <script setup lang="ts">
 	import { ref } from 'vue'
 
-	const navItems = ref([
+	const navbarItems = ref([
 		{ id: 'welcome', label: 'Welcome' },
 		{ id: 'about', label: 'About' },
 		{ id: 'experience', label: 'Experience' },
@@ -14,11 +14,11 @@
 	<nav class="bg-primary p-4">
 		<ul class="flex justify-around">
 			<li
-				v-for="item in navItems"
+				v-for="item in navbarItems"
 				:key="item.id">
 				<a
 					:href="'#' + item.id"
-					class="text-white hover:text-secondary">
+					class="text-black hover:text-secondary">
 					{{ item.label }}
 				</a>
 			</li>
