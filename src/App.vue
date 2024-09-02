@@ -1,39 +1,28 @@
 <script setup lang="ts">
-	import { onMounted, ref, Ref } from 'vue'
-	import Welcome from './pages/Welcome.vue'
-	import About from './pages/About.vue'
-	import { snapScroll } from './helpers/animations'
+	import { ref, onMounted } from 'vue'
+	import Navbar from './components/Navbar.vue'
+	import Footer from './components/Footer.vue'
+	import Home from './pages/Home.vue'
 
-	const scrollContainer: Ref<HTMLElement | null> = ref(null)
+	const scrollContainer = ref<HTMLElement | null>(null)
 
 	onMounted(() => {
-		console.log('on mounted called')
 		if (scrollContainer.value) {
-			snapScroll(scrollContainer)
+			// Additional logic can go here if needed, but should be minimal.
 		}
 	})
-
-	function handleScroll(): void {
-		// Handle the scroll event here if needed
-	}
 </script>
 
 <template>
-	<main>
-		<div
-			class="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0"
+	<div class="flex flex-col min-h-screen">
+		<Navbar />
+
+		<main
 			ref="scrollContainer"
-			@scroll="handleScroll">
-			<div
-				class="snap-always snap-center"
-				id="welcome">
-				<Welcome />
-			</div>
-			<div
-				class="snap-always snap-center"
-				id="about">
-				<About />
-			</div>
-		</div>
-	</main>
+			class="snap-y snap-mandatory overflow-y-scroll h-screen">
+			<Home />
+		</main>
+
+		<Footer />
+	</div>
 </template>

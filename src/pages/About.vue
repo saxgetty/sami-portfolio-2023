@@ -1,12 +1,12 @@
 <script setup lang="ts">
-	const background: string = 'bg-backgroundColorPrimary'
+	import { defineProps } from 'vue'
+	const props = defineProps<{ background: string }>()
 </script>
 
 <template>
-	<div :class="`relative min-h-screen flex ${background}`">
-		<div
-			class="container max-w-screen-xl mx-auto flex justify-center items-center text-4xl">
-			About
-		</div>
+	<div
+		:style="{ backgroundColor: props.background }"
+		class="h-full flex items-center justify-center">
+		<h1 class="text-4xl font-bold text-black">About</h1>
 	</div>
 </template>
