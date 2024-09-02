@@ -11,7 +11,7 @@
 </script>
 
 <template>
-	<nav class="bg-primary p-4">
+	<nav class="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
 		<ul class="flex justify-around">
 			<li
 				v-for="item in navbarItems"

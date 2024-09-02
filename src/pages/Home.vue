@@ -1,8 +1,9 @@
 <script setup lang="ts">
 	import About from './About.vue'
 	import Experience from './Experience.vue'
-	import Work from './Work.vue'
 	import Contact from './Contact.vue'
+	import Work from './Work.vue'
+	import Welcome from './Welcome.vue'
 	import { backgroundColors } from '../constants/backgroundColors.ts'
 </script>
 
