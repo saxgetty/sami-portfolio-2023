@@ -10,10 +10,11 @@
 	<div
 		:class="[
 			props.background,
-			'h-full flex flex-col justify-center p-8 md:p-16 md:flex-row md:justify-center md:items-center',
+			'h-full flex flex-col justify-center p-8 md:p-16',
 		]">
-		<div class="w-full md:w-3/4 lg:w-1/2">
-			<header class="mb-8 text-center">
+		<div
+			class="w-full xl:w-1/2 mx-auto bg-white shadow-lg p-6 md:p-12 rounded-lg">
+			<header class="mb-6 text-center">
 				<h1 class="text-4xl font-bold text-black">Contact Me</h1>
 			</header>
 
@@ -36,8 +37,10 @@
 					required />
 
 				<div class="text-center">
-					<!-- <PrimaryButton label="Send Message" :onClick="submitForm" /> -->
-					<PrimaryButton label="Send Message" />
+					<PrimaryButton
+						label="Send Message"
+						:classes="'bg-blue-500 hover:bg-blue-600 shadow-lg'" />
+					<!-- :onClick="() => submitForm()" -->
 				</div>
 			</form>
 		</div>
