@@ -23,24 +23,26 @@
 					id="name"
 					label="Name"
 					type="text"
-					required />
+					required
+					classes="bg-gray-100 text-gray-900 focus:border-blue-500" />
 
 				<FormInput
 					id="email"
 					label="Email"
 					type="email"
-					required />
+					required
+					classes="bg-gray-100 text-gray-900 focus:border-blue-500" />
 
 				<FormTextArea
 					id="message"
 					label="Message"
-					required />
+					required
+					classes="bg-gray-100 text-gray-900 focus:border-blue-500" />
 
 				<div class="text-center">
 					<PrimaryButton
 						label="Send Message"
 						:classes="'bg-blue-500 hover:bg-blue-600 shadow-lg'" />
-					<!-- :onClick="() => submitForm()" -->
 				</div>
 			</form>
 		</div>
