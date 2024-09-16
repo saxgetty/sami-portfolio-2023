@@ -1,26 +1,23 @@
 <script setup lang="ts">
-	import { ref, onMounted } from 'vue'
+	import { ref } from 'vue'
+	import { RouterView, useRoute } from 'vue-router'
 	import Navbar from './components/Navbar.vue'
-	import Home from './pages/Home.vue'
 	import Footer from './components/Footer.vue'
 
 	const scrollContainer = ref<HTMLElement | null>(null)
-
-	onMounted(() => {
-		if (scrollContainer.value) {
-			// temp
-		}
-	})
+	const route = useRoute()
 </script>
 
 <template>
 	<div class="flex flex-col min-h-screen">
+		<Navbar v-if="!['/development', '/design'].includes(route.path)" />
+
 		<main
 			ref="scrollContainer"
 			class="snap-y snap-mandatory overflow-y-scroll h-screen">
-			<Navbar />
-			<Home />
-			<Footer />
+			<RouterView />
 		</main>
+
+		<Footer />
 	</div>
 </template>

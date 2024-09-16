@@ -4,6 +4,7 @@
 		label: string
 		type: string
 		required?: boolean
+		autocomplete?: string
 		classes?: string
 	}>()
 </script>
@@ -20,6 +21,7 @@
 			:id="props.id"
 			:name="props.id"
 			:required="props.required"
+			:autocomplete="props.autocomplete"
 			:class="`mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${props.classes}`" />
 	</div>
 </template>

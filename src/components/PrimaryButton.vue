@@ -4,9 +4,20 @@
 		onClick?: () => void
 		classes?: string
 		icon?: string
+		route?: string
+		section?: string
 	}>()
 
 	const handleClick = () => {
+		if (props.route) {
+			if (props.section) {
+				// If there's a section specified, navigate to it and scroll
+				window.location.href = `${props.route}${props.section}`
+			} else {
+				// Otherwise, just navigate
+				window.location.href = props.route
+			}
+		}
 		if (props.onClick) {
 			props.onClick()
 		}

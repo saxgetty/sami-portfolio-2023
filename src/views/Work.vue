@@ -1,6 +1,8 @@
 <script setup lang="ts">
-	const props = defineProps<{ background: string }>()
+	import { useRouter } from 'vue-router'
 	import PrimaryButton from '../components/PrimaryButton.vue'
+	const props = defineProps<{ background: string }>()
+	const router = useRouter()
 </script>
 
 <template>
@@ -25,21 +27,21 @@
 				</p>
 				<PrimaryButton
 					label="View Programming Projects"
-					:classes="'bg-blue-500 hover:bg-blue-600 shadow-lg'" />
-				<!-- :onClick="() => (window.location.href = '/projects')" -->
+					:classes="'bg-blue-500 hover:bg-blue-600 shadow-lg'"
+					@click="() => router.push('/development')" />
 			</div>
 			<div>
 				<h2 class="text-2xl md:text-3xl font-semibold text-black mb-4">
 					Etsy & Pinterest Creations
 				</h2>
 				<p class="text-base md:text-lg text-gray-700 mb-4">
-					Discover my digital creations. Click the button below
-					to explore my Etsy shop and Pinterest inspirations.
+					Discover my digital creations. Click the button below to explore my Etsy
+					shop and Pinterest inspirations.
 				</p>
 				<PrimaryButton
 					label="Visit Etsy & Pinterest"
-					:classes="'bg-pink-500 hover:bg-pink-600 shadow-lg'" />
-				<!-- :onClick="() => (window.location.href = '/etsy')" -->
+					:classes="'bg-pink-500 hover:bg-pink-600 shadow-lg'"
+					@click="() => router.push('/design')" />
 			</div>
 		</div>
 	</div>

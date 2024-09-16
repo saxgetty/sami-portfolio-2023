@@ -1,5 +1,6 @@
 <script setup lang="ts">
 	import { ref } from 'vue'
+	import { scrollToSection } from '../utils/smoothScrollIntoView'
 
 	const navbarItems = ref([
 		{ id: 'welcome', label: 'Welcome' },
@@ -18,7 +19,8 @@
 				:key="item.id">
 				<a
 					:href="'#' + item.id"
-					class="text-black hover:text-secondary">
+					class="text-black hover:text-secondary"
+					:onClick="() => scrollToSection(item.label)">
 					{{ item.label }}
 				</a>
 			</li>

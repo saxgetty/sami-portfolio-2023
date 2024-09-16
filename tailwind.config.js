@@ -6,11 +6,22 @@ export default {
 			colors: {
 				backgroundColorPrimary: '#FFFBF0',
 				backgroundColorSecondary: '#EDFF86',
-				welcomeBg: '#3490dc',
-				aboutBg: '#38c172',
-				experienceBg: '#e3342f',
-				workBg: '#ffed4a',
-				contactBg: '#9561e2',
+				welcomeBg: '#E9EDC9',
+				aboutBg: '#606C38',
+				experienceBg: '#FEFAE0',
+				workBg: '#CCD5AE',
+				developmentBg: '#CCD5AE',
+				designBg: '#bc6c25',
+				contactBg: '#283618',
+				// light green #CCD5AE
+				// dark green #283618
+				// pastel green #E9EDC9
+				// green #606C38
+				// cream #FEFAE0 
+				// pastel orange #FAEDCD
+				// orange #DDA15E
+				// light orange #D4A373
+				// dark orange #BC6C25
 			},
 		},
 	},

@@ -24,6 +24,7 @@
 					label="Name"
 					type="text"
 					required
+					autocomplete="name"
 					classes="bg-gray-100 text-gray-900 focus:border-blue-500" />
 
 				<FormInput
@@ -31,12 +32,14 @@
 					label="Email"
 					type="email"
 					required
+					autocomplete="email"
 					classes="bg-gray-100 text-gray-900 focus:border-blue-500" />
 
 				<FormTextArea
 					id="message"
 					label="Message"
 					required
+					autocomplete="off"
 					classes="bg-gray-100 text-gray-900 focus:border-blue-500" />
 
 				<div class="text-center">
