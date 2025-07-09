@@ -1,23 +1,37 @@
 <script setup lang="ts">
-	import { ref } from 'vue'
-	import { RouterView, useRoute } from 'vue-router'
-	import Navbar from './components/Navbar.vue'
+	import NavBar from './components/NavBar.vue'
 	import Footer from './components/Footer.vue'
+	import WelcomeSection from './components/sections/WelcomeSection.vue'
+	import AboutSection from './components/sections/AboutSection.vue'
+	import ExperienceSection from './components/sections/ExperienceSection.vue'
+	import ProjectsSection from './components/sections/ProjectsSection.vue'
+	import ShopSection from './components/sections/ShopSection.vue'
+	import ContactSection from './components/sections/ContactSection.vue'
+	import DaisyThemeProvider from './components/DaisyThemeProvider.vue'
 
-	const scrollContainer = ref<HTMLElement | null>(null)
-	const route = useRoute()
+	const sections = [
+		{ id: 'welcome', label: 'Welcome' },
+		{ id: 'about', label: 'About' },
+		{ id: 'shop', label: 'Shop' },
+		{ id: 'contact', label: 'Contact' },
+	]
 </script>
 
 <template>
-	<div class="flex flex-col min-h-screen">
-		<Navbar v-if="!['/development', '/design'].includes(route.path)" />
+	<DaisyThemeProvider>
+		<div class="flex flex-col min-h-screen">
+			<NavBar :sections="sections"/>
 
-		<main
-			ref="scrollContainer"
-			class="snap-y snap-mandatory overflow-y-scroll h-screen">
-			<RouterView />
-		</main>
+			<main>
+				<WelcomeSection />
+				<AboutSection />
+				<ExperienceSection />
+				<ProjectsSection />
+				<ShopSection />
+				<ContactSection />
+			</main>
 
-		<Footer />
-	</div>
+			<Footer />
+		</div>
+	</DaisyThemeProvider>
 </template>
