@@ -1,71 +1,60 @@
 <script setup lang="ts">
-	import { ref } from 'vue'
+import { ref } from 'vue'
+import type { Component } from 'vue'
 
-	defineProps<{
-		sections: { id: string; label: string }[],
-	}>()
+defineProps<{
+	sections: { id: string; label: string; icon: Component }[]
+	activeSection: string
+}>()
 
-	const isMenuOpen = ref(false)
+const emit = defineEmits<{
+	navigate: [id: string]
+}>()
+
+const isMenuOpen = ref(false)
+
+const handleNavigate = (id: string) => {
+	emit('navigate', id)
+	isMenuOpen.value = false
+}
 </script>
 
 <template>
-	<nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 glass rounded-full shadow-lg px-6 py-2 w-auto max-w-[95vw] flex items-center justify-between gap-6">
-		<!-- Desktop Navigation -->
-		<ul class="hidden md:flex items-center gap-6 ml-4">
-			<li v-for="section in sections" :key="section.id">
-				<a 
-					:href="`#${section.id}`"
-					class="font-fredoka font-bold text-base-content px-4 py-2 rounded-full hover:bg-primary hover:text-primary-content focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
-				>
-					{{ section.label }}
-				</a>
-			</li>
-		</ul>
-		
-		<!-- Mobile Menu Button -->
-		<button 
+	<div class="md:hidden fixed top-4 right-4 z-50 flex flex-col items-end gap-2">
+		<button
 			@click="isMenuOpen = !isMenuOpen"
-			class="md:hidden text-base-content focus:outline-none ml-2"
-			aria-label="Toggle menu"
+			:aria-expanded="isMenuOpen"
+			aria-controls="mobile-nav-menu"
+			:aria-label="isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'"
+			class="w-12 h-12 rounded-full bg-paper border-2 border-cocoa shadow-lg flex items-center justify-center text-ink transition-colors cursor-pointer hover:bg-marigold/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cocoa"
 		>
-			<svg 
-				xmlns="http://www.w3.org/2000/svg" 
-				class="h-8 w-8" 
-				fill="none" 
-				viewBox="0 0 24 24" 
-				stroke="currentColor"
-			>
-				<path 
-					v-if="!isMenuOpen" 
-					stroke-linecap="round" 
-					stroke-linejoin="round" 
-					stroke-width="2" 
-					d="M4 6h16M4 12h16M4 18h16" 
-				/>
-				<path 
-					v-else 
-					stroke-linecap="round" 
-					stroke-linejoin="round" 
-					stroke-width="2" 
-					d="M6 18L18 6M6 6l12 12" 
-				/>
+			<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+				<path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+				<path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
 			</svg>
 		</button>
-		
-		<!-- Mobile Navigation -->
-		<div 
-			v-if="isMenuOpen" 
-			class="absolute top-full left-0 w-full glass rounded-b-2xl shadow-lg py-4 flex flex-col items-center gap-4 mt-2"
+
+		<nav
+			v-if="isMenuOpen"
+			id="mobile-nav-menu"
+			aria-label="Section navigation"
+			class="flex flex-col gap-2 items-end"
 		>
-			<a 
-				v-for="section in sections" 
+			<button
+				v-for="section in sections"
 				:key="section.id"
-				:href="`#${section.id}`"
-				class="font-fredoka font-bold text-base-content px-4 py-2 rounded-full hover:bg-primary hover:text-primary-content focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
-				@click="isMenuOpen = false"
+				@click="handleNavigate(section.id)"
+				:aria-current="activeSection === section.id ? 'page' : undefined"
+				class="flex items-center gap-3 px-4 py-2 rounded-full border-2 shadow-md font-display text-sm transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cocoa"
+				:class="
+					activeSection === section.id
+						? 'bg-ink border-ink text-paper font-bold'
+						: 'bg-cocoa border-cocoa text-paper hover:bg-ink hover:border-ink'
+				"
 			>
-				{{ section.label }}
-			</a>
-		</div>
-	</nav>
+				<span>{{ section.label }}</span>
+				<component :is="section.icon" class="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+			</button>
+		</nav>
+	</div>
 </template>

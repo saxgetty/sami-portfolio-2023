@@ -53,7 +53,7 @@
 </script>
 
 <template>
-	<div class="min-h-screen transition-all duration-500 bg-gradient-to-br from-primary via-secondary to-accent">
+	<div class="min-h-screen bg-paper">
 		<slot />
 	</div>
 </template>

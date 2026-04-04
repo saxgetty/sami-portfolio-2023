@@ -3,9 +3,21 @@ export default {
 	content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			colors: {
+				paper: '#F5F0E3',
+				ink: '#6B1E23',
+				cocoa: '#8B4513',
+				sage: '#9CBE8E',
+				forest: '#4A6741',
+				coral: '#E45455',
+				marigold: '#E9A72F',
+				terracotta: '#E86A33',
+				sky: '#6D929D',
+			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				display: ['Poppins', 'sans-serif'],
+				sans: ['Nunito', 'sans-serif'],
+				display: ['Fredoka', 'sans-serif'],
+				title: ['Righteous', 'cursive'],
 				mono: ['Fira Code', 'monospace'],
 				fredoka: ['Fredoka', 'Arial', 'sans-serif'],
 			},
