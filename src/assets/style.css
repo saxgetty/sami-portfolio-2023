@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&family=Righteous&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  color: #6B1E23;
+  background-color: #F5F0E3;
+}
+
+/* Big titles use Righteous font */
+h1, h2 {
+  font-family: 'Righteous', cursive;
+}
+
+/* Smaller headings use Fredoka font */
+h3, h4 {
+  font-family: 'Fredoka', sans-serif;
+}
