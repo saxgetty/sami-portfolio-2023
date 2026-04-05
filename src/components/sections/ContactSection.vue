@@ -1,5 +1,57 @@
 <script setup lang="ts">
+import { onUnmounted, ref } from 'vue'
 import { EnvelopeIcon, ChatBubbleLeftRightIcon } from '@heroicons/vue/24/outline'
+import { CheckIcon } from '@heroicons/vue/24/solid'
+
+type FormStatus = 'idle' | 'sending' | 'success' | 'error' | 'dev'
+
+const formStatus = ref<FormStatus>('idle')
+const SUCCESS_MS = 2200
+
+let successResetTimer: ReturnType<typeof setTimeout> | null = null
+
+function clearSuccessTimer() {
+	if (successResetTimer !== null) {
+		clearTimeout(successResetTimer)
+		successResetTimer = null
+	}
+}
+
+function scheduleSuccessReset() {
+	clearSuccessTimer()
+	successResetTimer = setTimeout(() => {
+		formStatus.value = 'idle'
+		successResetTimer = null
+	}, SUCCESS_MS)
+}
+
+onUnmounted(clearSuccessTimer)
+
+async function onSubmit(e: Event) {
+	e.preventDefault()
+	const form = e.target as HTMLFormElement
+
+	if (import.meta.env.DEV) {
+		formStatus.value = 'dev'
+		return
+	}
+
+	formStatus.value = 'sending'
+	try {
+		const data = new FormData(form)
+		const res = await fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(data as never).toString(),
+		})
+		if (!res.ok) throw new Error('submit failed')
+		form.reset()
+		formStatus.value = 'success'
+		scheduleSuccessReset()
+	} catch {
+		formStatus.value = 'error'
+	}
+}
 </script>
 
 <template>
@@ -26,7 +78,7 @@ import { EnvelopeIcon, ChatBubbleLeftRightIcon } from '@heroicons/vue/24/outline
 						<div>
 							<h3 class="text-lg font-bold text-ink mb-1">Email Me</h3>
 							<p class="text-base text-ink/70 mb-1">Drop me a line anytime</p>
-							<a href="mailto:saxfreelances@gmail.com" class="text-terracotta text-base font-medium hover:underline">saxfreelances@gmail.com</a>
+							<a href="mailto:sax.freelances@gmail.com" class="text-terracotta text-base font-medium hover:underline">sax.freelances@gmail.com</a>
 						</div>
 					</div>
 					
@@ -47,43 +99,77 @@ import { EnvelopeIcon, ChatBubbleLeftRightIcon } from '@heroicons/vue/24/outline
 					</div>
 				</div>
 				
-				<!-- Contact Form -->
-				<form class="space-y-4">
+				<!-- Contact Form: Netlify Forms (enable in Netlify UI + add notification email) -->
+				<form
+					name="contact"
+					method="POST"
+					data-netlify="true"
+					data-netlify-honeypot="bot-field"
+					class="space-y-4"
+					@submit="onSubmit"
+				>
+					<input type="hidden" name="form-name" value="contact" />
+					<p class="hidden" aria-hidden="true">
+						<label>
+							Do not fill:
+							<input name="bot-field" type="text" tabindex="-1" autocomplete="off" />
+						</label>
+					</p>
 					<div>
 						<label for="name" class="block text-base font-bold text-ink mb-1">Name</label>
-						<input 
-							type="text" 
-							id="name" 
-							name="name" 
+						<input
+							type="text"
+							id="name"
+							name="name"
+							required
 							placeholder="What should I call you?"
-							class="w-full px-4 py-3 rounded-xl bg-paper border-2 border-cocoa text-base text-ink placeholder:text-ink/40 focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all" 
+							class="w-full px-4 py-3 rounded-xl bg-paper border-2 border-cocoa text-base text-ink placeholder:text-ink/40 focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all"
 						/>
 					</div>
 					<div>
 						<label for="email" class="block text-base font-bold text-ink mb-1">Email</label>
-						<input 
-							type="email" 
-							id="email" 
-							name="email" 
+						<input
+							type="email"
+							id="email"
+							name="email"
+							required
 							placeholder="your@email.com"
-							class="w-full px-4 py-3 rounded-xl bg-paper border-2 border-cocoa text-base text-ink placeholder:text-ink/40 focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all" 
+							class="w-full px-4 py-3 rounded-xl bg-paper border-2 border-cocoa text-base text-ink placeholder:text-ink/40 focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all"
 						/>
 					</div>
 					<div>
 						<label for="message" class="block text-base font-bold text-ink mb-1">Message</label>
-						<textarea 
-							id="message" 
-							name="message" 
-							rows="4" 
+						<textarea
+							id="message"
+							name="message"
+							rows="4"
+							required
 							placeholder="Tell me about your project..."
 							class="w-full px-4 py-3 rounded-xl bg-paper border-2 border-cocoa text-base text-ink placeholder:text-ink/40 focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all resize-none"
 						></textarea>
 					</div>
-					<button 
-						type="submit" 
-						class="w-full py-3 rounded-xl bg-coral text-white text-lg font-bold font-display border-2 border-cocoa shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"
+					<p v-if="formStatus === 'error'" class="text-base font-medium text-coral" role="alert">
+						Something went wrong. Try the email link on the left, or try again later.
+					</p>
+					<p v-else-if="formStatus === 'dev'" class="text-base font-medium text-ink/80" role="status">
+						Form submissions only work on the deployed Netlify site, not in local dev.
+					</p>
+					<button
+						type="submit"
+						:disabled="formStatus === 'sending' || formStatus === 'success'"
+						:class="[
+							'w-full py-3 rounded-xl text-lg font-bold font-display border-2 border-cocoa shadow-md transition-all flex items-center justify-center gap-2 min-h-[52px]',
+							formStatus === 'success'
+								? 'bg-forest text-white shadow-lg'
+								: 'bg-coral text-white hover:shadow-xl hover:-translate-y-1 disabled:opacity-60 disabled:pointer-events-none',
+						]"
 					>
-						Send Message
+						<template v-if="formStatus === 'success'">
+							<CheckIcon class="w-8 h-8" aria-hidden="true" />
+							<span class="sr-only">Message sent</span>
+						</template>
+						<template v-else-if="formStatus === 'sending'">Sending…</template>
+						<template v-else>Send Message</template>
 					</button>
 				</form>
 			</div>
