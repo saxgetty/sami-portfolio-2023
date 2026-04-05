@@ -19,15 +19,15 @@ import { CodeBracketIcon, ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/ou
 			<!-- Projects Grid -->
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 				<div class="rounded-2xl shadow-md hover:shadow-lg transition-all bg-paper border-2 border-cocoa p-5 flex flex-col h-full">
-					<h3 class="text-xl font-bold text-ink mb-2">E-Commerce Platform</h3>
-					<p class="text-base text-ink/80 mb-4 flex-grow">Full-featured e-commerce platform with Vue.js and TypeScript.</p>
+					<h3 class="text-xl font-bold text-ink mb-2">Discord Guild Bot</h3>
+					<p class="text-base text-ink/80 mb-4 flex-grow">Full-featured Discord utility guild bot.</p>
 					<div class="mt-auto">
 						<div class="flex flex-wrap gap-2 mb-4">
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Vue.js</span>
+
 							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">TypeScript</span>
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Node.js</span>
+							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Prisma</span>
 						</div>
-						<a href="#" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
+						<a href="https://github.com/saxgetty/discord-doki-doki-wow-bot" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
 							View <ArrowTopRightOnSquareIcon class="w-4 h-4" />
 						</a>
 					</div>
@@ -35,59 +35,42 @@ import { CodeBracketIcon, ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/ou
 				
 				<div class="rounded-2xl shadow-md hover:shadow-lg transition-all bg-paper border-2 border-cocoa p-5 flex flex-col h-full">
 					<h3 class="text-xl font-bold text-ink mb-2">Portfolio Website</h3>
-					<p class="text-base text-ink/80 mb-4 flex-grow">Creative portfolio showcasing work and skills with animations.</p>
+					<p class="text-base text-ink/80 mb-4 flex-grow">Creative portfolio showcasing work and skills.</p>
 					<div class="mt-auto">
 						<div class="flex flex-wrap gap-2 mb-4">
 							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Vue.js</span>
 							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Tailwind</span>
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">GSAP</span>
+							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">TypeScript</span>
 						</div>
-						<a href="#" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
+						<a href="https://github.com/saxgetty/sami-portfolio-2023" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
 							View <ArrowTopRightOnSquareIcon class="w-4 h-4" />
 						</a>
 					</div>
 				</div>
 				
 				<div class="rounded-2xl shadow-md hover:shadow-lg transition-all bg-paper border-2 border-cocoa p-5 flex flex-col h-full">
-					<h3 class="text-xl font-bold text-ink mb-2">Task Management App</h3>
-					<p class="text-base text-ink/80 mb-4 flex-grow">Task management with drag-and-drop functionality.</p>
+					<h3 class="text-xl font-bold text-ink mb-2">iTinerary</h3>
+					<p class="text-base text-ink/80 mb-4 flex-grow">Mobile application for planning and managing trips.</p>
 					<div class="mt-auto">
 						<div class="flex flex-wrap gap-2 mb-4">
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">React</span>
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Redux</span>
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Firebase</span>
+							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Swift</span>
 						</div>
-						<a href="#" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
+						<a href="https://github.com/saxgetty/itinerary" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
 							View <ArrowTopRightOnSquareIcon class="w-4 h-4" />
 						</a>
 					</div>
 				</div>
 				
 				<div class="rounded-2xl shadow-md hover:shadow-lg transition-all bg-paper border-2 border-cocoa p-5 flex flex-col h-full">
-					<h3 class="text-xl font-bold text-ink mb-2">Analytics Dashboard</h3>
-					<p class="text-base text-ink/80 mb-4 flex-grow">Comprehensive analytics with interactive charts.</p>
+					<h3 class="text-xl font-bold text-ink mb-2">Busy Gator</h3>
+					<p class="text-base text-ink/80 mb-4 flex-grow">E-Commerce website with admin panel.</p>
 					<div class="mt-auto">
 						<div class="flex flex-wrap gap-2 mb-4">
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Vue.js</span>
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Chart.js</span>
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">API</span>
+							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">JavaScript</span>
+							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">CSS/HTML</span>
+							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">SQL</span>
 						</div>
-						<a href="#" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
-							View <ArrowTopRightOnSquareIcon class="w-4 h-4" />
-						</a>
-					</div>
-				</div>
-				
-				<div class="rounded-2xl shadow-md hover:shadow-lg transition-all bg-paper border-2 border-cocoa p-5 flex flex-col h-full">
-					<h3 class="text-xl font-bold text-ink mb-2">Auth System</h3>
-					<p class="text-base text-ink/80 mb-4 flex-grow">Secure authentication system with JWT tokens.</p>
-					<div class="mt-auto">
-						<div class="flex flex-wrap gap-2 mb-4">
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">Node.js</span>
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">JWT</span>
-							<span class="rounded-full bg-sage text-white px-2 py-1 text-xs border border-cocoa">MongoDB</span>
-						</div>
-						<a href="#" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
+						<a href="https://github.com/saxgetty/busy-gator" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-terracotta text-white px-4 py-2 text-sm font-display border-2 border-cocoa shadow-md hover:shadow-lg transition-all">
 							View <ArrowTopRightOnSquareIcon class="w-4 h-4" />
 						</a>
 					</div>

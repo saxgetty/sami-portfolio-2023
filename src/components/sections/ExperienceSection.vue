@@ -31,7 +31,7 @@ import { BriefcaseIcon, WrenchScrewdriverIcon } from '@heroicons/vue/24/outline'
 							<div class="flex gap-4 items-start">
 								<div class="w-3 h-3 rounded-full bg-forest border-2 border-cocoa mt-1.5 flex-shrink-0"></div>
 								<div>
-									<div class="text-lg font-bold text-ink">Quality Engineer II</div>
+									<div class="text-lg font-bold text-ink">Senior Quality Engineer I</div>
 									<div class="text-base text-ink/80">Allocate</div>
 									<div class="text-xs text-ink/60">2024 – Present</div>
 								</div>
