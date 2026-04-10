@@ -13,7 +13,7 @@
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.1.1",
     "@vueuse/core": "^10.7.0",
-    "axios": "^1.10.0",
+    "axios": "^1.15.0",
     "cors": "^2.8.5",
     "daisyui": "^5.0.43",
     "dotenv": "^17.2.0",
